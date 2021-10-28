@@ -1,6 +1,5 @@
 // Array to store all books in
 var bookArray = [];
-// localStorage.clear()
 
 const addBook = (title, author, pages, read ) => { 
   // Inner Html to display book to user
@@ -29,7 +28,6 @@ const addBook = (title, author, pages, read ) => {
   return {title, author, pages, read, createCard, deleteBook }
 
   };
-
 
 // Changes colour of add book button or cancel button colour
 function changeBtnColour() {
