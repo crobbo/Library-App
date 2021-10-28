@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Library App</h1>
+        <!-- <p class="header-description">This is a project for The Odin Project in which I have to make a library using Object Constructors and LocalStorage.</p>
+        <p class="sub-decription">You can also view the Github Repository here</p> -->
+        <button onclick="showForm()" class="add-book-btn">+ Add Book </button>
+    </header>
+    <div id="add-book-div" style="display: none">
+        <div class="form-div">
+            <form id="add-book-form" action="">
+                <input class="form-input" type="text" name="title" id="title" placeholder="Title">
+                <input class="form-input" type="text" name="author" id="author" placeholder="Author">
+                <input class="form-input" type="text" name="pages" id="pages" placeholder="No. of pages">
+                <div class="radio-btn-div">
+                    <p>Have you read this book?</p>
+                <div>
+                    <label for="readYes">Yes</label>
+                    <input type="radio" name="read" id="readYes" value="true">
+                </div>
+                <div>
+                    <label for="readNo">No</label>
+                    <input type="radio" name="read" id="readNo" value="false">
+                </div>
+                </div>
+                <input id="form-button" type="button" onclick="formData()" value="Add Book" id="formBtn">
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="book-list">
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
