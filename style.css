@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 100vh;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -30,6 +30,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    height: 98vh;
+    position:relative;
 }
 ol, ul {
 	list-style: none;
@@ -189,6 +191,7 @@ header {
     row-gap: 30px;
     justify-content: center;
     margin-top: 80px;
+    margin-bottom: 70px;
 }
 
 .book-card {
