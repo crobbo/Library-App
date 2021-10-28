@@ -87,7 +87,7 @@ function loadBooks( ){
     const key = localStorage.key(i);
       let storageStr = localStorage.getItem(key);
       let array = storageStr.split(',');
-      let restoredBook = addBook(array[0], array[1], array[2], array[3])
+      let restoredBook = addBook(array[0], array[1], array[2], JSON.parse(array[3].toLowerCase()))
       bookArray.push(restoredBook)
       restoredBook.createCard(restoredBook, true, key)
     }
